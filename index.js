@@ -2,12 +2,6 @@ const Observers = require('./Observer');
 
 const observers = new Observers();
 
-function print(value) {
-	dash(print.name);
-	console.log(value);
-
-}
-
 function soma(value) {
 	console.log(value + value);
 }
@@ -19,13 +13,7 @@ function mulplication(value) {
 function devidir(value) {
 	console.log(value / value);
 }
-
-function dash(nameInMiddlewarem ) {
-	console.log(`-----------------${nameInMiddleware}----------------------`)
-}
  
-
-// observers.subscriber(print);
 observers.subscriber(soma);
 observers.subscriber(mulplication);
 observers.subscriber(devidir);
